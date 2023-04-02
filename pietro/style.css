@@ -1,0 +1,592 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #eee;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: grid;
+  place-content: center;
+  height: 180vh;
+  overflow-x: hidden;
+}
+
+a, li {
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  z-index: 10;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgb(121, 121, 121) ;
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+.nav1 {
+  margin-left: 200px;
+}
+
+.nav2 {
+  margin-right: 130px;
+}
+
+#listHeader {
+  gap: 50px;
+  display: flex;
+}
+
+.items {
+  color: black;
+  padding-right: 8px;
+  font-size: 18px;
+  border-bottom: 2px solid transparent;
+}
+
+.items:hover {
+  animation: li 500ms both linear;
+}
+
+@keyframes li {
+
+  0% {
+    border-bottom: 2px solid rgb(122, 4, 122);
+    width: 0%;
+  }
+
+  100% {
+    border-bottom: 2px solid rgb(122, 4, 122);
+    width: 100%;
+  }
+}
+
+/* START */
+
+#start {
+  height: 100px;
+  margin-top: -300px;
+  display: grid;
+  place-content: center;
+}
+
+.title {
+  font-size: 32px;
+  animation: typing 3s 1s steps(40) both;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+strong {
+  font-size: 40px;
+  color: blueviolet;
+}
+
+.title2 {
+  font-size: 32px;
+  animation:  blink 800ms 4s linear infinite, typing2 3s 4s steps(40) both;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes blink {
+  from {
+    border-right: 2px solid;
+    border-right-color: black;
+  }
+
+  to {
+    border-right: 2px solid;
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typing {
+
+  from {
+    border-right: 2px solid;
+    width: 0;
+  }
+
+  to {
+    width: 410px;
+    border-right: none;
+  }
+
+}
+
+@keyframes typing2 {
+
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 620px;
+  }
+
+}
+
+/* ABOUT */
+
+#about {
+  background-color: #ccc;
+  position: absolute;
+  left: 20%;
+  width: 800px;
+  height: 10px;
+  top: 110%;
+}
+
+/* baby */
+
+#baby {
+  width: 0px;
+  background-color: rgb(92, 0, 116);
+  height: 10px;
+}
+
+#babyIcon {
+  font-size: 30px;
+  padding: 11px 15px;
+  border-radius: 100%;
+  background-color: rgb(94, 54, 255);
+  transform: translateY(-20px) translateX(-20px);
+  cursor: pointer;
+}
+
+#babyIcon:hover {
+  transition: 300ms;
+  background-color: rgb(132, 0, 255);
+}
+
+#babyText {
+  transition: 300ms;
+  opacity: 1;
+  top: 60px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgb(189, 119, 255);
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+/* plane */
+
+#planeIcon {
+  font-size: 25px;
+  padding: 15px 15px;
+  border-radius: 100%;
+  background-color: rgb(94, 54, 255);
+  transform: translateY(-30px) translateX(180px);
+  cursor: pointer;
+}
+
+#planeIcon:hover {
+  transition: 300ms;
+  background-color: rgb(132, 0, 255);
+}
+
+#planeText {
+  background-color: rgb(189, 119, 255);
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  opacity: 0;
+  transition: 300ms;
+}
+
+/* math */
+
+#mathIcon {
+  font-size: 25px;
+  padding: 15px 16px;
+  border-radius: 100%;
+  background-color: rgb(94, 54, 255);
+  transform: translateY(-180px) translateX(380px);
+  cursor: pointer;
+}
+
+#mathIcon:hover {
+  transition: 300ms;
+  background-color: rgb(132, 0, 255);
+}
+
+#mathText {
+  background-color: rgb(189, 119, 255);
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  text-align: center;
+  opacity: 0;
+  line-height: 20px;
+  top: 50px;
+  position: absolute;
+  transition: 300ms;
+}
+
+/* planet */
+
+#planetIcon {
+  font-size: 25px;
+  padding: 15px 15px;
+  border-radius: 100%;
+  background-color: rgb(94, 54, 255);
+  transform: translateY(-235px) translateX(580px);
+  cursor: pointer;
+}
+
+#planetIcon:hover {
+  transition: 300ms;
+  background-color: rgb(132, 0, 255);
+}
+
+#planetText {
+  background-color: rgb(189, 119, 255);
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  text-align: center;
+  opacity: 0;
+  line-height: 20px;
+  top: 50px;
+  position: absolute;
+  transition: 300ms;
+}
+
+/* today */
+
+#todayIcon {
+  font-size: 25px;
+  padding: 16px 17px;
+  border-radius: 100%;
+  background-color: rgb(94, 54, 255);
+  transform: translateY(-290px) translateX(780px);
+  cursor: pointer;
+}
+
+#todayIcon:hover {
+  transition: 300ms;
+  background-color: rgb(132, 0, 255);
+}
+
+#todayText {
+  background-color: rgb(189, 119, 255);
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  text-align: center;
+  opacity: 0;
+  line-height: 20px;
+  top: 50px;
+  position: absolute;
+  transition: 300ms;
+}
+
+/* animation About */
+
+@keyframes plane {
+
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 200px;
+  }
+
+}
+
+@keyframes math {
+  
+  0% {
+    width: 200px;
+  }
+
+  100% {
+    width: 400px;
+  }
+
+}
+
+@keyframes planet {
+  
+  0% {
+    width: 400px;
+  }
+
+  100% {
+    width: 600px;
+  }
+
+}
+
+@keyframes today {
+  
+  0% {
+    width: 600px;
+  }
+
+  100% {
+    width: 800px;
+  }
+
+}
+
+/* HOBBIES */
+
+#titleHobbies {
+  position: absolute;
+  top: -100px;
+  left: 110px;
+  text-align: center;
+  border-bottom: 2px solid violet;
+  width: 800px;
+}
+
+#hobbies {
+  position: absolute;
+  top: 190%;
+  left: 13%;
+}
+
+/* guitar */
+
+#guitar {
+  gap: 50px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 15%;
+}
+
+#guitarIcon {
+  font-size: 40px;
+}
+
+#guitarMusic {
+  font-size: 25px;
+  position: absolute;
+  left: -15px;
+  transform: rotate(-25deg);
+  color: rgb(119, 40, 255);
+  top: -0px;
+  opacity: 0;
+}
+
+#guitarMusic2 {
+  color: rgb(119, 40, 255);
+  opacity: 0;
+  font-size: 20px;
+  top: 30px;
+  left: 0%;
+  transform: rotate(25deg);
+  position: absolute;
+}
+
+#guitar:hover #guitarMusic {
+  opacity: 1;
+  transition: 1s;
+  transform: translateX(0px) translateY(-15px) rotate(-25deg);
+}
+
+#guitar:hover #guitarMusic2 {
+  opacity: 1;
+  transition: 1s;
+  transform: translateX(50px) translateY(0px) rotate(25deg);
+}
+
+#guitarText {
+  transition: 300ms;
+  font-size: 18px;
+  background-color: purple;
+  color: #eee;
+  border-radius: 20px;
+  padding: 20px 30px;
+  width: 800px;
+}
+
+/* musica */
+
+#music {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-top: 200px;
+  position: absolute;
+  left: 15%;
+}
+
+#musicUser {
+  color: rgb(71, 25, 255);
+  font-size: 40px;
+}
+
+#musicFone {
+  font-size: 30px;
+  position: absolute;
+  left: 2.5px;
+  top: 10px;
+  opacity: 0;
+}
+
+#music:hover #musicFone {
+  transition: 300ms;
+  opacity: 1;
+}
+
+#musicText {
+  transition: 300ms;
+  font-size: 18px;
+  color: #eee;
+  width: 800px;
+  background-color: purple;
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+
+/* HABILIDADES */
+
+#skilsTitle {
+  position: absolute;
+  left: 3%;
+  padding-bottom: 10px;
+  border-bottom: 2px solid violet;
+  width: 800px;
+  text-align: center;
+  top: -120px;
+}
+
+#skils {
+  position: absolute;
+  top: 270%;
+  display: flex; 
+  gap: 350px;
+  left: 16.5%;
+}
+
+/* matematica */
+
+#mathSkils {
+  background-color: #ccc;
+  width: 30px;
+  height: 250px;
+  border: 5px solid #ccc;
+  border-radius: 20px;
+  transform: rotate(180deg);
+}
+
+#mathProgress {
+  transform: translateY(-30px);
+  height: 0px;
+  border-radius: 20px;
+  background-color: rgb(94, 54, 255);
+}
+
+#mathSkilsIcon {
+  cursor: pointer;
+  transform: translateY(270px) translateX(3.5px);
+  font-size: 30px;
+}
+
+#mathSkilsText {
+  transform: rotate(180deg);
+}
+
+@keyframes mathProgress {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 50px;
+  }
+}
+
+
+/* code */
+
+#codeSkils {
+  background-color: #ccc;
+  width: 30px;
+  height: 250px;
+  border: 5px solid #ccc;
+  border-radius: 20px;
+  transform: rotate(180deg);
+}
+
+#codeProgress {
+  transform: translateY(-30px);
+  height: 0px;
+  border-radius: 20px;
+  background-color: rgb(94, 54, 255);
+}
+
+#codeSkilsIcon {
+  cursor: pointer;
+  transform: translateY(270px) translateX(-4px);
+  font-size: 30px;
+}
+
+#codeSkilsText {
+  transform: rotate(180deg);
+}
+
+@keyframes codeProgress {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 60px;
+  }
+}
+
+
+/* guitar */
+
+#guitarSkils {
+  background-color: #ccc;
+  width: 30px;
+  height: 250px;
+  border: 5px solid #ccc;
+  border-radius: 20px;
+  transform: rotate(180deg);
+}
+
+#guitarProgress {
+  transform: translateY(-30px);
+  height: 0px;
+  border-radius: 20px;
+  background-color: rgb(94, 54, 255);
+}
+
+#guitarSkilsIcon {
+  cursor: pointer;
+  transform: translateY(270px) translateX(-4px) rotate(180deg);
+  font-size: 30px;
+}
+
+#guitarSkilsText {
+  transform: rotate(180deg);
+}
+
+@keyframes guitarProgress {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 180px;
+  }
+}

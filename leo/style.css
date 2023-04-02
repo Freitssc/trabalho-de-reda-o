@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #eee;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: grid;
+  place-content: center;
+  height: 200vh;
+  overflow-x: hidden;
+}
+
+a, li {
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  z-index: 10;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgb(99, 177, 255) ;
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+.nav1 {
+  margin-left: 200px;
+}
+
+.nav2 {
+  margin-right: 130px;
+}
+
+.ulItems {
+  gap: 50px;
+  display: flex;
+}
+
+.items {
+  color: black;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 18px;
+  border-bottom: 2px solid transparent;
+}
+
+.items:hover {
+  background-color: rgb(0, 255, 153);
+  transition: 300ms;
+}
+
+/* ABOUT */
+
+#about {
+  background-color: #ccc;
+  position: absolute;
+  left: 20%;
+  width: 800px;
+  height: 10px;
+  top: 35%;
+}
+
+/* baby */
+
+#baby {
+  width: 0px;
+  background-color: rgb(0, 168, 194);
+  height: 10px;
+}
+
+#babyIcon {
+  font-size: 30px;
+  padding: 11px 13px;
+  border-radius: 100%;
+  background-color: rgb(0, 137, 149);
+  transform: translateY(-20px) translateX(-20px);
+  cursor: pointer;
+}
+
+#babyIcon:hover {
+  transition: 300ms;
+  background-color: rgb(0, 204, 255);
+}
+
+#babyText {
+  transition: 300ms;
+  opacity: 1;
+  top: 60px;
+  border-radius: 20px;
+  color: #eee;
+  padding: 20px;
+  background-color: rgb(0, 51, 144);
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+/* plane */
+
+#planeIcon {
+  font-size: 25px;
+  padding: 15px 13px;
+  border-radius: 100%;
+  background-color: rgb(0, 137, 149);
+  transform: translateY(-32px) translateX(180px);
+  cursor: pointer;
+}
+
+#planeIcon:hover {
+  transition: 300ms;
+  background-color: rgb(0, 204, 255);
+}
+
+#planeText {
+  background-color: rgb(0, 51, 144);
+  border-radius: 20px;
+  color: #eee;
+  padding: 20px;
+  margin-left: 20px;
+  opacity: 0;
+  transition: 300ms;
+}
+
+/* math */
+
+#mathIcon {
+  font-size: 25px;
+  padding: 16px 13px;
+  border-radius: 100%;
+  background-color: rgb(0, 137, 149);
+  transform: translateY(-200px) translateX(380px);
+  cursor: pointer;
+}
+
+#mathIcon:hover {
+  transition: 300ms;
+  background-color: rgb(0, 204, 255);
+}
+
+#mathText {
+  background-color: rgb(0, 51, 144);
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  text-align: center;
+  color: #eee;
+  opacity: 0;
+  line-height: 20px;
+  top: 50px;
+  position: absolute;
+  transition: 300ms;
+}
+
+/* planet */
+
+#planetIcon {
+  font-size: 25px;
+  padding: 18px 15px;
+  border-radius: 100%;
+  background-color: rgb(0, 137, 149);
+  transform: translateY(-260px) translateX(580px);
+  cursor: pointer;
+}
+
+#planetIcon:hover {
+  transition: 300ms;
+  background-color: rgb(0, 204, 255);
+}
+
+#planetText {
+  background-color: rgb(0, 51, 144);
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  text-align: center;
+  opacity: 0;
+  color: #eee;
+  line-height: 20px;
+  top: 50px;
+  position: absolute;
+  transition: 300ms;
+}
+
+/* today */
+
+#todayIcon {
+  font-size: 25px;
+  padding: 17px 15px;
+  border-radius: 100%;
+  background-color: rgb(0, 137, 149);
+  transform: translateY(-325px) translateX(780px);
+  cursor: pointer;
+}
+
+#todayIcon:hover {
+  transition: 300ms;
+  background-color: rgb(0, 204, 255);
+}
+
+#todayText {
+  background-color: rgb(0, 51, 144);
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  text-align: center;
+  opacity: 0;
+  color: #eee;
+  line-height: 20px;
+  top: 50px;
+  position: absolute;
+  transition: 300ms;
+}
+
+/* animation About */
+
+@keyframes plane {
+
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 200px;
+  }
+
+}
+
+@keyframes math {
+  
+  0% {
+    width: 200px;
+  }
+
+  100% {
+    width: 400px;
+  }
+
+}
+
+@keyframes planet {
+  
+  0% {
+    width: 400px;
+  }
+
+  100% {
+    width: 600px;
+  }
+
+}
+
+@keyframes today {
+  
+  0% {
+    width: 600px;
+  }
+
+  100% {
+    width: 800px;
+  }
+
+}
+
+/* HOBBIES */
+
+#listHobbies {
+  position: absolute;
+  left: 10%;
+  top: 122%;
+}
+
+#titleHobbies {
+  position: absolute;
+  left: 22%;
+  font-size: 30px;
+  margin-bottom: 120px;
+  border-bottom: 2px solid rgb(0, 146, 146);
+  width: 800px;
+  text-align: center;
+}
+
+/* ACADEMIA */
+
+#gym {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 150px;
+}
+
+#gymDumbbell {
+  font-size: 50px;
+  color: rgb(86, 86, 86);
+  padding: 10px;
+}
+
+#gymImg {
+  transition: 300ms;
+  opacity: 0;
+  height: 200px;
+  position: absolute;
+  top: -105px;
+  left: 505px;
+  z-index: 0;
+}
+
+#gymImg2 {
+  transition: 300ms;
+  opacity: 0;
+  height: 200px;
+  position: absolute;
+  top: -115px;
+  left: 345px;
+  z-index: 0;
+}
+
+#gymText {
+  z-index: 1;
+  transition: 300ms;
+  font-size: 18px;
+  padding: 30px 40px 30px 40px;
+  border-radius: 20px;
+  background-color: rgb(0, 159, 159);
+  width: 800px;
+}
+
+/* COMPUTADOR */
+
+#pc {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+#pcIcon {
+  font-size: 45px;
+  padding: 15px;
+  transform: translateY(-80px);
+}
+
+#pcImg {
+  height: 150px;
+  position: absolute;
+  opacity: 0;
+  transform: rotate(deg);
+  left: 450px;
+  transition: 300ms;
+  top: 120px;
+}
+
+#pcText {
+  transition: 300ms;
+  z-index: 1;
+  transition: 300ms;
+  font-size: 18px;
+  padding: 30px 40px 30px 40px;
+  margin-bottom: 150px;
+  border-radius: 20px;
+  background-color: rgb(0, 159, 159);
+  width: 800px;
+}
+
+/* futebol */
+
+#fut {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+#futIcon {
+  font-size: 45px;
+  padding: 15px;
+}
+
+#futImg {
+  height: 250px;
+  position: absolute;
+  opacity: 0;
+  left: 450px;
+  transition: 300ms;
+  top: 365px;
+}
+
+#futText {
+  transition: 300ms;
+  z-index: 1;
+  transition: 300ms;
+  font-size: 18px;
+  padding: 30px 40px 30px 40px;
+  border-radius: 20px;
+  background-color: rgb(0, 159, 159);
+  width: 800px;
+}
+
+/* HABILIDADES */
+
+#titleSkils {
+  position: absolute;
+  top: -50px;
+  left: -235px;
+  text-align: center;
+  width: 800px;
+  border-bottom: 2px solid #ccc;
+}
+
+#skils {
+  display: flex;
+  gap: 100px;
+  position: absolute;
+  top: 250%;
+  left: 38%;
+}
+
+#videoGameIcon, #administrarIcon, #problemsIcon {
+  font-size: 35px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+#videoGameText {
+  position: absolute;
+  font-size: 20px;
+  opacity: 0;
+  background-color: rgb(0, 159, 159);
+  width: 800px;
+  transition: 300ms;
+  left: -75%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#administrarText {
+  position: absolute;
+  transition: 300ms;
+  font-size: 20px;
+  opacity: 0;
+  background-color: rgb(0, 159, 159);
+  width: 800px;
+  left: -70%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#problemsText {
+  transition: 300ms;
+  position: absolute;
+  font-size: 20px;
+  opacity: 0;
+  background-color: rgb(0, 159, 159);
+  width: 800px;
+  left: -80%;
+  padding: 20px;
+  border-radius: 20px;
+}
