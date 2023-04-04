@@ -213,7 +213,7 @@ strong {
   padding: 15px 16px;
   border-radius: 100%;
   background-color: rgb(94, 54, 255);
-  transform: translateY(-180px) translateX(380px);
+  transform: translateY(-200px) translateX(380px);
   cursor: pointer;
 }
 
@@ -242,7 +242,7 @@ strong {
   padding: 15px 15px;
   border-radius: 100%;
   background-color: rgb(94, 54, 255);
-  transform: translateY(-235px) translateX(580px);
+  transform: translateY(-255px) translateX(580px);
   cursor: pointer;
 }
 
@@ -271,7 +271,7 @@ strong {
   padding: 16px 17px;
   border-radius: 100%;
   background-color: rgb(94, 54, 255);
-  transform: translateY(-290px) translateX(780px);
+  transform: translateY(-310px) translateX(780px);
   cursor: pointer;
 }
 
