@@ -22,20 +22,17 @@ let baby = document.getElementById('baby')
 let babyIcon = document.getElementById('babyIcon')
 let planeIcon = document.getElementById('planeIcon')
 let mathIcon = document.getElementById('mathIcon')
-let planetIcon = document.getElementById('planetIcon')
 let todayIcon = document.getElementById('todayIcon')
 
 let babyText = document.getElementById('babyText')
 let planeText = document.getElementById('planeText')
 let mathText = document.getElementById('mathText')
-let planetText = document.getElementById('planetText')
 let todayText = document.getElementById ('todayText')
 
 
 babyIcon.addEventListener('click', click5)
 planeIcon.addEventListener('click', click)
 mathIcon.addEventListener('click', click2)
-planetIcon.addEventListener('click', click3)
 todayIcon.addEventListener('click', click4)
 
 function click() {
@@ -43,7 +40,6 @@ function click() {
   planeText.style.opacity='1'
   mathText.style.opacity='0'
   todayText.style.opacity='0'
-  planetText.style.opacity='0'
   babyText.style.opacity='0'
 }
 
@@ -52,7 +48,6 @@ function click2() {
   planeText.style.opacity='0'
   mathText.style.opacity='1'
   todayText.style.opacity='0'
-  planetText.style.opacity='0'
   babyText.style.opacity='0'
 }
 
@@ -70,7 +65,6 @@ function click4() {
   planeText.style.opacity='0'
   mathText.style.opacity='0'
   todayText.style.opacity='1'
-  planetText.style.opacity='0'
   babyText.style.opacity='0'
 }
 
@@ -79,7 +73,6 @@ function click5() {
   planeText.style.opacity='0'
   mathText.style.opacity='0'
   todayText.style.opacity='0'
-  planetText.style.opacity='0'
 }
 
 let vgi = document.getElementById('videoGameIcon')
